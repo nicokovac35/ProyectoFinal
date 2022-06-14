@@ -1,0 +1,31 @@
+
+// Variables
+$myFont1: font-family 'Space Mono' monospace;
+$Colr-rojo: red;
+$color-ama: yellow;
+$color-gris: grey;
+$letra20: 20px;
+$ancho: 100%;
+$letra30: 30px;
+$letra-kalam:font-family 'Kalam';
+
+
+
+
+//NAV
+li:hover{
+    background-color: $myColor2;
+    
+}
+li {
+    font-family: $letra-kalam;
+    font-size:$letra20;
+
+}
+strong{
+    color:$color-gris;
+    font-family: $myFont1 ;
+}
+h2{
+    color:$color-ama;
+}
