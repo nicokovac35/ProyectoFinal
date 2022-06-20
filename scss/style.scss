@@ -1,31 +1,95 @@
+@import 'animate.css';
+@import '_header.css';
+//Variables
+$color1: #f2ff00;
+$color2: #74d10a;
+$color3: #ac1037;
+$color4: #1decbb;
+$color5: #e818ef;
+$color6: #1eb6ee;
+$color7: #5b1159;
 
-// Variables
-$myFont1: font-family 'Space Mono' monospace;
-$Colr-rojo: red;
-$color-ama: yellow;
-$color-gris: grey;
-$letra20: 20px;
-$ancho: 100%;
-$letra30: 30px;
-$letra-kalam:font-family 'Kalam';
+$texto1:'Archivo', sans-serif;
+$texto2:'Bebas Neue', cursive;
+$texto3:'Kanit', sans-serif;
+$texto4:'Lobster', cursive;
+
+$letrag:50px;
+$letram:30px;
+$letrap:15px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    nav{
+        li{
+            a{
+                font-family:$texto4;
+                &:hover{
+                    background-color: $color1;
+                }
+            }
+            
+        }
+
+    }
+    main{
+        h3{
+            font-family: $texto4;
+            font-size: $letrag;
+        }
+        p{
+            font-family: $texto1;
+            font-size: $letram;
+        }
+        h1{
+            font-family: $texto3;
+        }
+
+
+    }
+}
 
 
 
 
-//NAV
-li:hover{
-    background-color: $myColor2;
+ 
+
+   
+
+
+.navbar-brand{
+    text-align: center;
+    width: 180px; 
+    font-family: $texto2;
+    color:$color3;
+    font-size: $letrag;
+    animation-name: anima-nav;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+
     
 }
-li {
-    font-family: $letra-kalam;
-    font-size:$letra20;
+.navbar-brand:hover{
+    background-color:$color1;
+}
 
+.btn btn-lg px-4{
+    color:green;
 }
-strong{
-    color:$color-gris;
-    font-family: $myFont1 ;
+
+
+//@keyframes- animaciones
+
+@keyframes anima-nav{
+    0%   {background-color:$color1; }
+    25%  {background-color:$color2; }
+    50%  {background-color:$color4; }
+    75%  {background-color:$color5;}
+    100% {background-color:$color6;}
 }
-h2{
-    color:$color-ama;
-}
+
