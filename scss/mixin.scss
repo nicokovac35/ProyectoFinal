@@ -1,0 +1,13 @@
+@mixin boton($fondo) {
+    background-color:$fondo;
+    width: 200px;
+    height: 100px;
+    margin-top:10px;
+    padding: 20px;
+}
+.boton-1{
+    @include boton (#f2ff00);
+}
+.boton-2{
+    @include boton (#f23f09);
+}

@@ -1,6 +1,8 @@
 @import 'animate.css';
 @import '_header.css';
-//Variables
+@import 'mixin.css';
+
+
 $color1: #f2ff00;
 $color2: #74d10a;
 $color3: #ac1037;
@@ -8,6 +10,13 @@ $color4: #1decbb;
 $color5: #e818ef;
 $color6: #1eb6ee;
 $color7: #5b1159;
+
+// Variables-colores de bootrastp
+$red:#dc3545;
+$purple:#6f42c1;
+
+
+
 
 $texto1:'Archivo', sans-serif;
 $texto2:'Bebas Neue', cursive;
@@ -47,20 +56,16 @@ body{
             font-size: $letram;
         }
         h1{
-            font-family: $texto3;
+            font-family: $texto2;
+            font-size: $letrag;
+            button{
+                font-family: $texto3;
+                background-color:$red;
+            }
         }
-
-
+       
     }
 }
-
-
-
-
- 
-
-   
-
 
 .navbar-brand{
     text-align: center;
@@ -78,9 +83,16 @@ body{
     background-color:$color1;
 }
 
-.btn btn-lg px-4{
-    color:green;
+.boton{
+    background-color:$fondo;
+    width: 200px;
+    height: 100px;
+    margin-top:10px;
+    padding: 20px;
 }
+
+
+
 
 
 //@keyframes- animaciones
