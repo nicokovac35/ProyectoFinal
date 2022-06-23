@@ -1,5 +1,33 @@
 @import url(animate.css);
 @import url(_header.css);
+.boton1 {
+  background-color: #1decbb;
+  border: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  color: #ffffff;
+  width: 300px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px; }
+
+.boton1:hover {
+  background-color: #f2ff00; }
+
+.boton2 {
+  background-color: #74d10a;
+  border: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  color: #ffffff;
+  width: 300px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px; }
+
+.boton2:hover {
+  background-color: #5b1159; }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,10 +47,7 @@ body {
     font-size: 30px; }
   body main h1 {
     font-family: "Bebas Neue", cursive;
-    font-size: 50px; }
-    body main h1 button {
-      font-family: "Kanit", sans-serif;
-      background-color: #dc3545; }
+    font-size: 100px; }
 
 .navbar-brand {
   text-align: center;
@@ -36,12 +61,6 @@ body {
 
 .navbar-brand:hover {
   background-color: #f2ff00; }
-
-.boton {
-  width: 100px;
-  height: 100px;
-  margin-top: 10px;
-  padding: 20px; }
 
 @keyframes anima-nav {
   0% {
