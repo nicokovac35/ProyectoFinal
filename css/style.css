@@ -1,5 +1,42 @@
 @import url(animate.css);
-@import url(_header.css);
+/*- Mixin de botones de logeo en index.html*/
+/*- div estandar para imagenes en top10 de galery.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffffff; }
+  body nav li a {
+    font-family: "Lobster", cursive; }
+    body nav li a:hover {
+      background-color: #f2ff00; }
+  body main h3 {
+    font-family: "Lobster", cursive;
+    font-size: 50px; }
+    body main h3:hover {
+      background-color: #1decbb; }
+  body main p {
+    font-family: "Archivo", sans-serif;
+    font-size: 30px; }
+  body main h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 100px; }
+
+.navbar-brand {
+  text-align: center;
+  width: 180px;
+  font-family: "Bebas Neue", cursive;
+  color: #ac1037;
+  font-size: 50px;
+  animation-name: anima-nav;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+
+.navbar-brand:hover {
+  background-color: #f2ff00; }
+
 .boton1 {
   background-color: #1decbb;
   border: none;
@@ -28,39 +65,87 @@
 .boton2:hover {
   background-color: #5b1159; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+/*barra rrss*/
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100; }
 
-body {
-  background-color: #ffffff; }
-  body nav li a {
-    font-family: "Lobster", cursive; }
-    body nav li a:hover {
-      background-color: #f2ff00; }
-  body main h3 {
-    font-family: "Lobster", cursive;
-    font-size: 50px; }
-  body main p {
-    font-family: "Archivo", sans-serif;
-    font-size: 30px; }
-  body main h1 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 100px; }
+.icon {
+  font-family: "Lobster", cursive;
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s; }
 
-.navbar-brand {
-  text-align: center;
-  width: 180px;
-  font-family: "Bebas Neue", cursive;
-  color: #ac1037;
-  font-size: 50px;
-  animation-name: anima-nav;
-  animation-duration: 5s;
-  animation-iteration-count: infinite; }
+.icon-whatsapp {
+  background: #74d10a; }
 
-.navbar-brand:hover {
-  background-color: #f2ff00; }
+.icon-instagram {
+  background: #e818ef; }
+
+.icon-facebook {
+  background: #1eb6ee; }
+
+.icon-envelop {
+  background: #ac1037; }
+
+.icon-whatsapp:hover {
+  background: #74d10a; }
+
+.icon-instagram:hover {
+  background: #e818ef; }
+
+.icon-facebook:hover {
+  background: #1eb6ee; }
+
+.icon-envelop:hover {
+  background: #ac1037; }
+
+.icon:first-child {
+  border-radius: 0 0 0 0rem; }
+
+.icon:last-child {
+  border-radius: 1 0 0 1rem; }
+
+.icon:hover {
+  text-decoration: none;
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: #f2ff00;
+  color: black; }
+
+/*-responsive y MQ*/
+main {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 250px;
+  grid-gap: 10px; }
+
+@media only screen and (max-width: 700px) {
+  main {
+    width: 49.99999%;
+    margin: 6px 0; } }
+
+@media only screen and (max-width: 500px) {
+  main {
+    width: 90%; } }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 @keyframes anima-nav {
   0% {

@@ -1,5 +1,8 @@
 @import 'variables';
 
+/*- Mixin de botones de logeo en index.html*/
+
+
 @mixin boton ($fondo-boton){
     background-color:$fondo-boton;
     border: none;
@@ -11,15 +14,10 @@
     margin-top:5px;
     padding:10px;
 } 
-.boton1{
-    @include boton($color4);
-}
-.boton1:hover{
-    background-color: $color1;
-}
-.boton2{
-    @include boton($color2);
-}
-.boton2:hover{
-    background-color: $color7;
+/*- div estandar para imagenes en top10 de galery.html */
+
+@mixin img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

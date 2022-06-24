@@ -1,7 +1,6 @@
 @import 'animate.css';
-@import '_header.css';
 @import '_mixin';
-@import 'variables';
+@import '_variables';
 
 
 
@@ -28,12 +27,17 @@ body{
     }
     main{
         h3{
+            
             font-family: $texto4;
             font-size: $letrag;
+            &:hover{
+                background-color: $color4;
+            }
         }
         p{
             font-family: $texto1;
             font-size: $letram;
+           
         }
         h1{
             
@@ -61,6 +65,114 @@ body{
     background-color:$color1;
 }
 
+.boton1{
+    @include boton($color4);
+}
+.boton1:hover{
+    background-color: $color1;
+}
+.boton2{
+    @include boton($color2);
+}
+.boton2:hover{
+    background-color: $color7;
+}
+
+/*barra rrss*/
+.social-bar{
+    position:fixed;
+    right: 0;
+    top: 35%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    font-family: $texto4;
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-whatsapp {
+    background: $color2;
+}
+.icon-instagram{
+    background: $color5;
+}
+.icon-facebook{
+    background: $color6;
+}
+.icon-envelop{
+    background: $color3;
+}
+.icon-whatsapp:hover {
+    background: $color2;
+}
+.icon-instagram:hover{
+    background: $color5;
+}
+.icon-facebook:hover{
+    background: $color6;
+}
+.icon-envelop:hover{
+    background: $color3;
+}
+
+.icon:first-child{
+    border-radius: 0 0 0 0rem;
+}
+.icon:last-child{
+    border-radius: 1 0 0 1rem;
+}
+.icon:hover {
+    text-decoration: none;
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: $color1;
+    color:black;
+}
+
+
+/*-responsive y MQ*/
+main{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom: 30px;
+    display:grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap:10px;
+}
+.img-top{
+    include
+}
+
+
+  @media only screen and (max-width: 700px) {
+    main {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    main {
+      width: 90%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
 //@keyframes- animaciones
