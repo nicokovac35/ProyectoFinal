@@ -137,42 +137,107 @@ body{
     color:black;
 }
 
+/*-Seccion de imagenes galery.html*/
+.titulo-galery{
+    font-family: $texto4;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.titulo-galery:hover{
+    background-color: $color5;
+    color: #fff;
+}
+.subtitulo-galery{
+    text-align: center;
+    padding:5px 5px 5px 5px;
+    font-family: $texto2;
+    background-color:$color6;
+}
+.subtitulo-galery:hover{
+    color: #fff;
+}
 
-/*-responsive y MQ*/
-main{
-    max-width: 1100px;
+.contenido-img{
     width: 100%;
+    max-width: 1100px;
     margin: auto;
-    margin-top:30px;
-    margin-bottom: 30px;
-    display:grid;
-    grid-template-columns: (3, 1fr);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px;
-    grid-gap:10px;
+    grid-gap: 40px;
 }
-.img-top{
-    include
+figure{
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+        
+    
+}
+.datos-img{
+    @include datos;
+    
 }
 
+.contenido-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.contenido-img .box-img:nth-child(11){
+    grid-column-start: span 2;
+}
+.contenido-img .box-img:nth-child(6){
+    grid-row-start: span 2 ;
+}
+.contenido-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+/*-responsive y MQ*
+- version de tablet 800px con grid
+- versiobn mobile con flexbox */
+@media screen and (max-width:800px){
+    .contenido-img{
+        width: 95%;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .contenido-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+    .datos-img{
+        display:none;
+    }
+}
+@media screen and (max-width:500px){
+    .contenido-img{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:5px;
+        grid-template-rows: 200px;
+    }
+    .contenido-img .box-img img{
+        height: 200px;
+    }
+    .contenido-img .box-img:nth-child(1){
+        grid-column-start: span 2;
+    }
+    .contenido-img .box-img:nth-child(10){
+        grid-column-start: span 2;
+    }
+    .datos-img{
+        display:none;
+    }
 
-  @media only screen and (max-width: 700px) {
-    main {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
   
-  @media only screen and (max-width: 500px) {
-    main {
-      width: 90%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
 
 
 //@keyframes- animaciones
