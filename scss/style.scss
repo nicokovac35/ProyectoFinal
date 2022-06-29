@@ -1,7 +1,7 @@
 @import 'animate.css';
 @import '_mixin';
 @import '_variables';
-
+@import '_animaciones';
 
 
 
@@ -17,6 +17,7 @@ body{
             a{
                 
                 font-family:$texto4;
+                font-size: "text-lg-start";
                 &:hover{
                     background-color: $color1;
                 }
@@ -44,10 +45,12 @@ body{
             font-family: $texto2;
             font-size: $letraxl;
             
+            
         }
        
     }
 }
+
 
 .navbar-brand{
     text-align: center;
@@ -65,20 +68,100 @@ body{
     background-color:$color1;
 }
 
+.titulo-logeo{
+    margin-left: 40%;
+    text-align: center;
+    width: 330px;
+    height: 120px;
+    position:relative;
+    animation-name: anima-letra1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
 .boton1{
     @include boton($color4);
+  
 }
 .boton1:hover{
     background-color: $color1;
+ 
 }
 .boton2{
     @include boton($color2);
 }
 .boton2:hover{
     background-color: $color7;
+    animation-name: anima-letra1;
+
 }
 
-/*barra rrss*/
+
+/*Footer principal*/
+.pie-pagina{
+    width: 100%;
+    background-color: $color10;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: $texto2;
+}
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+    font-family: $texto2;
+}
+.pie-pagina .grupo-1 .red-social a{
+    background-color: $color10;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    
+   
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: $color1;
+}
+.pie-pagina .grupo-2{
+    background-color: $color9;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+    font-family: $texto2;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 25px;
+}
+
+/*Termina Footer principal*/
+/*barra rrss - creado con flexbox y desaparece para la version mobile*/
 .social-bar{
     position:fixed;
     right: 0;
@@ -90,7 +173,7 @@ body{
     z-index: 100;
 }
 
-.icon {
+.social-bar, .icon {
     font-family: $texto4;
     color: white;
     text-decoration: none;
@@ -98,29 +181,33 @@ body{
     display: flex;
     transition: all .5s;
 }
-.icon-whatsapp {
+.whatsapp {
     background: $color2;
 }
-.icon-instagram{
+.instagram{
     background: $color5;
 }
-.icon-facebook{
+.facebook{
     background: $color6;
 }
-.icon-envelop{
+.envelop{
     background: $color3;
 }
-.icon-whatsapp:hover {
+.whatsapp:hover {
     background: $color2;
+    background-color: $color1;
 }
-.icon-instagram:hover{
+.instagram:hover{
     background: $color5;
+    background-color: $color1;
 }
-.icon-facebook:hover{
+.facebook:hover{
     background: $color6;
+    background-color: $color1;
 }
-.icon-envelop:hover{
+.envelop:hover{
     background: $color3;
+    background-color: $color1;
 }
 
 .icon:first-child{
@@ -136,6 +223,7 @@ body{
     box-shadow: $color1;
     color:black;
 }
+// Termina estilos banner de redes sociales
 
 /*-Seccion de imagenes galery.html*/
 .titulo-galery{
@@ -182,9 +270,21 @@ figure{
     
 }
 .datos-img{
-    @include datos;
-    
+    @include datos;  
 }
+.datos-img:hover{
+    background-color:#ffffff;
+    list-style: none;  
+}
+h2{
+    background-color: $color1;
+    text-align: center;
+    font: $letraxl;
+    font-family: $texto2;
+    padding:20px;
+}
+
+/* Grid*/
 
 .contenido-img .box-img:nth-child(1){
     grid-column-start: span 2;
@@ -198,9 +298,50 @@ figure{
 .contenido-img .box-img:nth-child(4){
     grid-row-start: span 2;
 }
+
+.vermas-rrss{
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 45px;
+    max-width: 1200px;
+    height: 80px;
+    margin-left: 400px;
+    padding: 5px;   
+    margin-bottom: 10px;
+    display:flex;
+
+}
+.vermas-rrss, .red-social a{
+    color: black;
+    text-decoration: none;
+    padding:0px 20px;
+}
+
+.ver-mas-rrss, .red-social a:hover{
+    color: $color9;
+}
+
+/* Final a estilos galery.html*/
+
+/* Inicio a estilos de Artist.html*/
+
+    .artist-contenido{
+        display: grid;
+        grid-template-columns: 80px 200px auto 30px;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+     .artist-view{
+        background-color: rgba(255, 255, 255, 0.8);
+         text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
 /*-responsive y MQ*
-- version de tablet 800px con grid
-- versiobn mobile con flexbox */
+- version de tablet 800px con grid y flexbox
+- versiobn mobile  grid y  flexbox */
 @media screen and (max-width:800px){
     .contenido-img{
         width: 95%;
@@ -214,6 +355,12 @@ figure{
     }
     .datos-img{
         display:none;
+    }
+    .social-bar{
+        display: none;
+    }
+    .vermas-rrss, .red-social a{
+    margin-left:10px;
     }
 }
 @media screen and (max-width:500px){
@@ -236,17 +383,23 @@ figure{
         display:none;
     }
 
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    .social-bar{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+
+    .vermas-rrss, .red-social a{
+        display: block;
+    }
+
   
-}
-
-
-//@keyframes- animaciones
-
-@keyframes anima-nav{
-    0%   {background-color:$color1; }
-    25%  {background-color:$color2; }
-    50%  {background-color:$color4; }
-    75%  {background-color:$color5;}
-    100% {background-color:$color6;}
 }
 

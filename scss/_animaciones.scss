@@ -1,0 +1,19 @@
+
+//@keyframes- animaciones
+
+@keyframes anima-nav{
+    0%   {background-color:$color1; }
+    25%  {background-color:$color2; }
+    50%  {background-color:$color4; }
+    75%  {background-color:$color5;}
+    100% {background-color:$color6;}
+}
+
+@keyframes anima-letra1 {
+    0%   {left:0px; top:0px;}
+    25%  {left:10px; top:0px;}
+    50%  { left:10px; top:0px;}
+    75%  {left:20; top:0px;}
+    100% { left:-10px; top:0px;}
+    
+  }
