@@ -322,6 +322,9 @@ h2 {
 
 /* Final a estilos galery.html*/
 /* Inicio a estilos de Artist.html*/
+.artist-view-1 {
+  grid-area: obra1; }
+
 .artist-contenido {
   display: grid;
   grid-template-columns: 80px 200px auto 30px;
