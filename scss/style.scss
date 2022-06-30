@@ -359,7 +359,51 @@ h2{
 .card a:hover{
     color: $color1;
 }
+
+/*--Fin a los estilos con boostrap de artist.html*/
+
+/*---- Estilos formulario.html*/
+.registro{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $texto2;
+}
+.registro-titulo{
+    display:flex;
+    padding:10px;
+    margin-left: 500px;
+    width:45%;
+    position: relative;
+    animation-name: anima-letra1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+
+}
+.registro-caja{
+    height:80%;
+    width:45%;
+    justify-content:center;
+    align-items:center;
+    margin-left: 500px;
+}
+
+
+/*---error404.html-*/
+
+.caja-error404{
+    text-align: center;
+    padding:60px;
+}
+
+
+
+
+
 /*-responsive y MQ*
+
 - version de tablet 800px con grid y flexbox
 - versiobn mobile  grid y  flexbox */
 @media screen and (max-width:800px){

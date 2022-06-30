@@ -25,8 +25,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;1,300&family=Bebas+Neue&family=Kanit:wght@500&family=Lobster&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <title>Not Art!</title>
-</head>
-<body>
+<main>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">   
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Not Art!</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./galery.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./artist.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./error.html">Shopp</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./formulario.html">Hablemos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header> 
+
+<main class="registro">
+  <h1 class="registro-titulo"> Registro</h1>
+<div class="registro-caja">
+  
+    <div class="input-nombre">
+      <span class="detalles">Nombre completo:</span>
+      <input type="text" placeholder="Ingrese su nombre" required>
+    </div>
+    <div class="input-usuario">
+      <span class="detalles">Nombre de Usuario:</span>
+      <input type="text" placeholder="Ingrese un  usuario" required>
+    </div>
+    <div class="input-email"> 
+      <span class="detalles">Email:</span>
+      <input type="text" placeholder="Ingrese su correo" required>
+    </div>
+    <div class="input-telefono"> 
+      <span class="detalles">Telefono:</span>
+      <input type="text" placeholder="Codigo de que pais es y el numero " required>
+    </div>
+    <div class="input-contrasena">
+      <span class="detalles">Contraseña</span>
+      <input type="text" placeholder="Maximo 8 caracteres" required>
+    </div>
+    <div class=input-recontrasena> 
+      <span class="detalles">Confirma contraseña</span>
+      <input type="text" placeholder="Si se equivoca pierde." required>
+    </div>
+    <div class="detalles-genero">
+      <span  class="titulo-genero">Genero</span>
+      <div class="categoria">
+        <label for="">
+            <span class="seleccione"></span>
+            <span class="genero">Masculino</span>
+        </label>
+        <label="">
+            <span class="seleccione"></span>
+            <span class="genero">Femenino</span>
+        </label>
+        <label for="">
+            <span class="seleccione"></span>
+            <span class="genero">Prefiero no decir</span>
+        </label>
+      </div>
+    </div>
+    <div class="button-registro"></div>
+      <input  class="input-boton" type="submit" value="Registrar">
+</div>
+</main>
+
+  
+
+<section id="rrss">
+  <div class="social-bar">
+      <a href="https://web.whatsapp.com/" class="icon whatsapp" target="_blank ">Whatsapp </a>
+      <a href="https://instagram.com/" class="icon instagram" target="_blank"> Instagram</a>
+      <a href="https://facebook.com" class="icon facebook" target="_blank">Facebook</a>
+      <a href="#" class="icon envelop" target="_blank">Correo</a> 
+  </div>        
+</section>
+     
+
+
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d22802.012803523445!2d-74.0840623873838!3d40.811790084174255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sestadio%20cerca%20de%20MetLife%20Stadium%2C%20MetLife%20Stadium%20Drive%2C%20East%20Rutherford%2C%20Nueva%20Jersey%2C%20EE.%20UU.!5e0!3m2!1ses!2scl!4v1656304032299!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS...</h2>
+            <p>lugar ubicacion direcion ubicacion direcion de de direciones direcion 000001, direccon, DR</p>
+            
+        </div>
+        <div class="box">
+            <h2>Siguenos en nuestras plataformas</h2>
+            <div class="red-social">
+                <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a herf="https://www.twitch.tv/" class="fa fa-twitch"></a>
+                <a href="https://www.spotify.com/" class="fa fa-spotify"></a>
+                <a href="https://www.reddit.com/" class="fa fa-reddit"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; KovacsTI- Todos los derechos reservadisimos</small>
+    </div>
+  </footer>
+  
+</main>
+</body>
+</html>
