@@ -1,0 +1,109 @@
+
+// Usos de psudoclases y element ocupe  :hover y :firts-child y :last-child
+:hover para la mayoria de los botonos cambiando el backgrund, size y color.
+
+:firts-child y last-child para cambiar los bordes de la seccion de redes sociales.
+
+
+// aca pego una parte donde utilize ambos.
+
+.whatsapp:hover {
+    background: $color2;
+    background-color: $color1;
+}
+.instagram:hover{
+    background: $color5;
+    background-color: $color1;
+}
+.facebook:hover{
+    background: $color6;
+    background-color: $color1;
+}
+.envelop:hover{
+    background: $color3;
+    background-color: $color1;
+}
+
+.icon:first-child{
+    border-radius: 1 0 0 1rem;
+}
+.icon:last-child{
+    border-radius: 1 0 0 1rem;
+}
+.icon:hover {
+    text-decoration: none;
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: $color1;
+    color:black;
+}
+
+
+
+// usos de @media lo responsive
+
+
+// utilize tres medidas  pc (1200 aprox), tablet (800) y movil (500)px.
+// puse tambien algunos elementos se vieran mejor flexbox y grids o saque algunos con display none.
+
+
+@media screen and (max-width:800px){
+    .contenido-img{
+        width: 95%;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .contenido-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+    .datos-img{
+        display:none;
+    }
+    .social-bar{
+        display: none;
+    }
+    .vermas-rrss, .red-social a{
+    margin-left:10px;
+    }
+}
+@media screen and (max-width:500px){
+    .contenido-img{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:5px;
+        grid-template-rows: 200px;
+    }
+    .contenido-img .box-img img{
+        height: 200px;
+    }
+    .contenido-img .box-img:nth-child(1){
+        grid-column-start: span 2;
+    }
+    .contenido-img .box-img:nth-child(10){
+        grid-column-start: span 2;
+    }
+    .datos-img{
+        display:none;
+    }
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    .social-bar{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+
+    .vermas-rrss, .red-social a{
+        display: block;
+    }
+
+  
+}

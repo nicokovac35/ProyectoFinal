@@ -326,21 +326,39 @@ h2{
 
 /* Inicio a estilos de Artist.html*/
 
-    .artist-view-1{ grid-area: obra1;}
+.titulo-artist{
+    font-family: $texto2;
+    text-align: center;
+    position: relative;
+    animation-name: anima-letra1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     
-    .artist-contenido{
-        display: grid;
-        grid-template-columns: 80px 200px auto 30px;
-        gap: 10px;
-        background-color: #2196F3;
-        padding: 10px;
-    }
-     .artist-view{
-        background-color: rgba(255, 255, 255, 0.8);
-         text-align: center;
-        padding: 20px 0;
-        font-size: 30px;
-    }
+}
+
+
+.card{
+    width: 100%;
+}
+.card img{
+    margin-left: 100px;
+}
+.card p{
+    font-family: $texto2;
+}
+.card p:hover{
+    color: $color9;
+}
+
+.card a{
+    font-size: $letrag;
+    text-decoration: none;
+    color: $color10;
+}
+.card a:hover{
+    color: $color1;
+}
 /*-responsive y MQ*
 - version de tablet 800px con grid y flexbox
 - versiobn mobile  grid y  flexbox */

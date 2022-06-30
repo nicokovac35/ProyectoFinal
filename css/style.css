@@ -322,21 +322,34 @@ h2 {
 
 /* Final a estilos galery.html*/
 /* Inicio a estilos de Artist.html*/
-.artist-view-1 {
-  grid-area: obra1; }
-
-.artist-contenido {
-  display: grid;
-  grid-template-columns: 80px 200px auto 30px;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px; }
-
-.artist-view {
-  background-color: rgba(255, 255, 255, 0.8);
+.titulo-artist {
+  font-family: "Bebas Neue", cursive;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px; }
+  position: relative;
+  animation-name: anima-letra1;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; }
+
+.card {
+  width: 100%; }
+
+.card img {
+  margin-left: 100px; }
+
+.card p {
+  font-family: "Bebas Neue", cursive; }
+
+.card p:hover {
+  color: #fc3b00; }
+
+.card a {
+  font-size: 50px;
+  text-decoration: none;
+  color: #212121; }
+
+.card a:hover {
+  color: #f2ff00; }
 
 /*-responsive y MQ*
 - version de tablet 800px con grid y flexbox
