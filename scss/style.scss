@@ -395,7 +395,11 @@ h2{
 
 .caja-error404{
     text-align: center;
+    margin-top:200px;
     padding:60px;
+    width: 100%;
+    margin-bottom: 200px;
+
 }
 
 
@@ -423,9 +427,10 @@ h2{
     .social-bar{
         display: none;
     }
-    .vermas-rrss, .red-social a{
-    margin-left:10px;
+    .vermas-rrss{
+        display:none;
     }
+
 }
 @media screen and (max-width:500px){
     .contenido-img{
@@ -460,9 +465,10 @@ h2{
         display: none;
     }
 
-    .vermas-rrss, .red-social a{
-        display: block;
+    .vermas-rrss{
+        display:none;
     }
+
 
   
 }
