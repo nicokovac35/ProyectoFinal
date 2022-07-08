@@ -390,6 +390,11 @@ h2 {
 - version de tablet 800px con grid y flexbox
 - versiobn mobile  grid y  flexbox */
 @media screen and (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden; }
+  body {
+    position: relative; }
   .contenido-img {
     width: 95%;
     display: grid;
@@ -406,6 +411,11 @@ h2 {
     display: none; } }
 
 @media screen and (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden; }
+  body {
+    position: relative; }
   .contenido-img {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -429,4 +439,16 @@ h2 {
   h3 {
     display: none; }
   .vermas-rrss {
-    display: none; } }
+    display: none; }
+  .titulo-logeo {
+    margin-right: 40%; }
+  .titulo-logeo {
+    margin-left: 25%;
+    text-align: center;
+    width: 220px;
+    height: 120px;
+    font-size: 70px;
+    animation-name: anima-letra1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; } }
