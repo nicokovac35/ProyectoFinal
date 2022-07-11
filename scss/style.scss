@@ -2,6 +2,9 @@
 @import '_mixin';
 @import '_variables';
 @import '_animaciones';
+@import'_form';
+@import '_shopp';
+
 
 
 
@@ -345,7 +348,7 @@ h2{
     margin-left: 100px;
 }
 .card p{
-    font-family: $texto2;
+    font-family: $texto4;
 }
 .card p:hover{
     color: $color9;
@@ -362,33 +365,10 @@ h2{
 
 /*--Fin a los estilos con boostrap de artist.html*/
 
-/*---- Estilos formulario.html*/
-.registro{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $texto2;
-}
-.registro-titulo{
-    display:flex;
-    padding:10px;
-    margin-left: 500px;
-    width:45%;
-    position: relative;
-    animation-name: anima-letra1;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
 
 
-}
-.registro-caja{
-    height:80%;
-    width:45%;
-    justify-content:center;
-    align-items:center;
-    margin-left: 500px;
-}
+
+
 
 
 /*---error404.html-*/
@@ -437,6 +417,11 @@ h2{
     .vermas-rrss{
         display:none;
     }
+    .titulo-form{
+        font-size:$letrag;
+    }
+
+
 
 }
 @media screen and (max-width:500px){
@@ -496,6 +481,12 @@ h2{
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
         
+    }
+    .registro{
+    position: absolute;
+    }
+    .titulo-form{
+        font-size:$letram;
     }
 
   

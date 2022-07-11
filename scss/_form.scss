@@ -1,0 +1,80 @@
+@import 'variables';
+/*---- Estilos formulario.html*/
+
+.formulario {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px;
+    background-image: linear-gradient(to right bottom, #e2f40c, #9dfa64, #5af89f, #0df2ce, #35e7ea);
+}
+
+.formulario-box{
+    max-width: 800px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    
+}
+.titulo-form{
+    font-size: $letraxl; // version pc
+
+}
+h2:after{
+    content:'';
+    position:absolute;
+    border-radius:3px;
+}
+.cuadro{
+    width: 100%;
+    padding: 10px 5px;
+    border-color:$color1;
+    border-radius:5px;
+    transition:1s;
+    font-family: $texto2;
+    font-size:$letras;
+}
+.cuadro:hover{
+    background-color: $color4;
+}
+.cuadro:focus{
+    background-color:$color6;
+    font-family: $texto2;
+}
+textarea{
+    font-family: $texto2;
+    font-size: $letram;
+    border: solid 3px $color1;
+    background-color: #ffffff;
+    &:hover{
+        background-color: $color8;
+    }
+    &:focus{
+        background-color: $color1;
+
+    }
+}
+
+.cuadro:focus{
+    background-color:$color6;
+    font-family: $texto2;
+}
+.boton-form{
+    width: 100%;
+    padding:10px;
+    font-size: $letram;
+    font-family: $texto2;
+    background-color: $color4;
+}
+.boton-form:hover{
+    background-color:$color1;
+}

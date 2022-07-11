@@ -1,0 +1,56 @@
+@import 'variables';
+/*--estilos de compras*/
+.card{
+    display:flex;
+    align-items:center;
+    overflow: hidden;
+}
+.img-shopp{
+    width:100%;
+    height:50%;
+    transition:0.5s;
+    object-fit: cover;    
+
+}
+.img-shopp:hover{
+    transform: scale(1.2);
+}
+
+
+.titulo-compras{
+    padding-top: 10px;
+    text-align:center;
+    font-family: $texto2;
+    font-size:$letram;
+}
+
+.boton-comprar{
+    padding: 10px ;
+    font-family: $texto2;
+    margin-left: 150px;
+    background-color: $color4;
+    color: $color10;
+    border: none;
+    font-size: $letras;
+    
+}
+
+.boton-favoritos{
+
+    padding: 10px ;
+    font-family: $texto2;
+    background-color:$color1;
+    color: $color10;
+    border: none;
+    font-size: $letras;  
+}
+.boton-comprar:hover, .boton-favoritos:hover{
+    background-color: $color8;
+}
+
+
+.texto-final{
+    font-family: $texto2;
+    font-size:$letras;
+}
+
