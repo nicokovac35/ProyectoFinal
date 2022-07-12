@@ -1,17 +1,16 @@
 {
-  "name": "desafiocodersass",
+  "name": "proyectofinal",
   "version": "1.0.0",
   "description": "desafiocodersasss",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "sasscoder"
+    "url": "https://github.com/nicokovac35/ProyectoFinal"
   },
   "author": "nico martinez",
   "license": "ISC",
